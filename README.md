@@ -1,3 +1,12 @@
+import {simpleCollapsify} from 'collapsify';
+
+await simpleCollapsify('https://example.com', {
+  headers: {
+    'accept-language': 'en-US'
+  }
+})
+  .then(page => console.log(page))
+  .catch(err => console.error(err));
 # Collapsify [![](http://img.shields.io/npm/dm/collapsify.svg?style=flat)](https://www.npmjs.org/package/collapsify) [![](http://img.shields.io/npm/v/collapsify.svg?style=flat)](https://www.npmjs.org/package/collapsify)
 
 > Inlines all of the JavaScripts, stylesheets, images, fonts etc. of an HTML page.
